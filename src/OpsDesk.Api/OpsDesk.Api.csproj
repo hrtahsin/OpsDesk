@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpsDesk.Application\OpsDesk.Application.csproj" />
+    <ProjectReference Include="..\OpsDesk.Infrastructure\OpsDesk.Infrastructure.csproj" />
+    <ProjectReference Include="..\OpsDesk.Shared\OpsDesk.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

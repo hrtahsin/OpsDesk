@@ -1,0 +1,78 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+    <div>
+        <h1 class="h2 mb-1">Operations Dashboard</h1>
+        <p class="text-muted mb-0">Service desk workload, asset inventory, and approval queues.</p>
+    </div>
+    <div class="d-flex gap-2">
+        <a class="btn btn-primary" href="/tickets/create">New Ticket</a>
+        <a class="btn btn-outline-secondary" href="/asset-requests/create">Request Asset</a>
+    </div>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-12 col-md-6 col-xl-3">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="text-muted small">Open tickets</div>
+            <div class="display-6 fw-semibold">0</div>
+        </section>
+    </div>
+    <div class="col-12 col-md-6 col-xl-3">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="text-muted small">Critical tickets</div>
+            <div class="display-6 fw-semibold">0</div>
+        </section>
+    </div>
+    <div class="col-12 col-md-6 col-xl-3">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="text-muted small">Available assets</div>
+            <div class="display-6 fw-semibold">0</div>
+        </section>
+    </div>
+    <div class="col-12 col-md-6 col-xl-3">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="text-muted small">Pending approvals</div>
+            <div class="display-6 fw-semibold">0</div>
+        </section>
+    </div>
+</div>
+
+<div class="row g-3">
+    <div class="col-12 col-xl-7">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="h5 mb-0">Recent Tickets</h2>
+                <a class="small" href="/tickets">View all</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Ticket</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Owner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="text-muted">No tickets yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div class="col-12 col-xl-5">
+        <section class="border rounded-2 p-3 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="h5 mb-0">Approval Queue</h2>
+                <a class="small" href="/asset-requests">Review</a>
+            </div>
+            <div class="text-muted">No pending asset requests.</div>
+        </section>
+    </div>
+</div>

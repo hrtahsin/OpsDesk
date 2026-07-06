@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/TestResults/
+.git/
+.github/
+.dotnet-home/
+.nuget/
+.codex/
+opsdesk_aspnet_blueprint_codex.md
+README.md
