@@ -36,7 +36,6 @@ public static class AppSeedData
                 Id = 1,
                 Name = "Information Technology",
                 Code = "IT",
-                ManagerUserId = "user-manager",
                 CreatedAt = SeededAt,
                 IsActive = true
             },
@@ -45,7 +44,6 @@ public static class AppSeedData
                 Id = 2,
                 Name = "Finance",
                 Code = "FIN",
-                ManagerUserId = "user-manager",
                 CreatedAt = SeededAt,
                 IsActive = true
             },
@@ -54,7 +52,6 @@ public static class AppSeedData
                 Id = 3,
                 Name = "Human Resources",
                 Code = "HR",
-                ManagerUserId = "user-manager",
                 CreatedAt = SeededAt,
                 IsActive = true
             });
